@@ -16,12 +16,15 @@ SOURCES += proamp.cpp\
         mainwindow.cpp \
     core.cpp \
     logger.cpp \
-    profiler.cpp
+    profiler.cpp \
+    aboutdialog.cpp
 
 HEADERS  += proamp.h \
     mainwindow.h \
     core.h \
     logger.h \
-    profiler.h
+    profiler.h \
+    aboutdialog.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    aboutdialog.ui

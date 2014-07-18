@@ -44,7 +44,7 @@ const QString ProAmp::APP_NAME = "ProAmp";
 /** Application version code */
 const int ProAmp::APP_VERSION_CODE = 1;
 /** Application version name */
-const QString ProAmp::APP_VERSION_NAME = "0.1-Pre-Alpha";
+const QString ProAmp::APP_VERSION_NAME = "0.1 Alpha";
 
 /**
  * Constructor
