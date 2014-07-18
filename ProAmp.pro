@@ -22,7 +22,6 @@ HEADERS  += proamp.h \
     mainwindow.h \
     core.h \
     logger.h \
-    profiler.h \
-    proamp.h
+    profiler.h
 
 FORMS    += mainwindow.ui
