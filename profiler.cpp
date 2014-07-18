@@ -21,18 +21,37 @@ void Profiler::start() {
     this->t.start();
 }
 
+/**
+ * Restart the profiler
+ * @brief restart
+ */
 void Profiler::restart() {
     this->t.restart();
 }
 
+/**
+ * Get the profiler time in milliseconds
+ * @brief getTime
+ * @return Profiler time in milliseconds
+ */
 int Profiler::getTime() {
     return this->t.elapsed();
 }
 
+/**
+ * Get the profiler time in milliseconds as a string
+ * @brief Profiler::getTimeString
+ * @return Profiler time in milliseconds as a string
+ */
 QString Profiler::getTimeString() {
     return QString::number(this->getTime());
 }
 
+/**
+ * Get the profiler time.
+ * @brief Profiler::getTimeProper
+ * @return
+ */
 QString Profiler::getTimeProper() {
     int d = this->getTime();
 

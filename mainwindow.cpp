@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "proamp.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
@@ -15,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
  */
 bool MainWindow::init() {
     // Set the window title
-    this->setWindowTitle("ProAmp v0.1-Pre-Alpha");
+    this->setWindowTitle(ProAmp::APP_NAME + " v" + ProAmp::APP_VERSION_NAME);
 
     // Everything seems to be fine, return true
     return true;
