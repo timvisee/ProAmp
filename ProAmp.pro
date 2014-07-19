@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,14 +18,16 @@ SOURCES += proamp.cpp\
     core.cpp \
     logger.cpp \
     profiler.cpp \
-    aboutdialog.cpp
+    aboutdialog.cpp \
+    musicplayer.cpp
 
 HEADERS  += proamp.h \
     mainwindow.h \
     core.h \
     logger.h \
     profiler.h \
-    aboutdialog.h
+    aboutdialog.h \
+    musicplayer.h
 
 FORMS    += mainwindow.ui \
     aboutdialog.ui

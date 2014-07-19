@@ -14,6 +14,11 @@
  */
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
+    a.setApplicationName(ProAmp::APP_NAME);
+    a.setOrganizationName(ProAmp::APP_NAME);
+    //a.setOrganizationDomain("timvisee.com");
+    //a.setApplicationDisplayName(ProAmp::APP_NAME);
+    a.setWindowIcon(QIcon(":/logo.png"));
 
     // Initialize the logger
     Logger::init();

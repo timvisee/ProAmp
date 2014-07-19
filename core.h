@@ -1,7 +1,12 @@
 #ifndef CORE_H
 #define CORE_H
 
+#include "musicplayer.h"
+
 class Core {
+private:
+    MusicPlayer player;
+
 public:
     /**
      * Constructor

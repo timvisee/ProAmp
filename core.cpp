@@ -4,6 +4,8 @@
 #include "logger.h"
 #include "profiler.h"
 
+MusicPlayer player;
+
 /**
  * Constructor
  * @brief Core
@@ -22,6 +24,10 @@ bool Core::init() {
     // Starting the core, show a status message and start a profiler
     Logger::info("Starting " + ProAmp::APP_NAME + " Core...");
     Profiler p(true);
+
+    // Music player test
+    player.setSourceFile("C:\\test.wav");
+    player.play();
 
     // TODO: Core initialization code here...
 
