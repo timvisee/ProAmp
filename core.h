@@ -4,6 +4,8 @@
 #include <QVector>
 #include "musicplayermanager.h"
 
+using Player::MusicPlayerManager;
+
 class Core {
 private:
     MusicPlayerManager pm;
@@ -13,7 +15,7 @@ public:
      * Constructor
      * @brief Core
      */
-    Core();
+    Core::Core();
 
     /**
      * Initialize the core

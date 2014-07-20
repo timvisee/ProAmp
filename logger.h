@@ -3,6 +3,8 @@
 
 #include <QtCore>
 
+namespace Util {
+namespace Log {
 class Logger {
 private:
     /** Defines whether the logger is initialized or not */
@@ -147,5 +149,7 @@ public:
      */
     static void setDebugPrefix(QString prefix);
 };
+}
+}
 
 #endif // LOGGER_H

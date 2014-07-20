@@ -1,5 +1,7 @@
 #include "musicplayer.h"
 
+using namespace Player;
+
 /**
  * Constructor
  * @brief MusicPlayer::MusicPlayer

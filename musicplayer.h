@@ -3,9 +3,11 @@
 
 #include <QtMultimedia>
 #include <QtMultimedia/QMediaPlayer>
-
 #include "volumecontroller.h"
 
+using Player::Volume::VolumeController;
+
+namespace Player {
 class MusicPlayer {
 private:
     QMediaPlayer p;
@@ -48,5 +50,6 @@ public:
 
     VolumeController getVolumeController();
 };
+}
 
 #endif // MUSICPLAYER_H

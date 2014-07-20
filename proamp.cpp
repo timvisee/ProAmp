@@ -5,6 +5,9 @@
 #include "profiler.h"
 #include "mainwindow.h"
 
+using Util::Log::Logger;
+using Util::Profiler::Profiler;
+
 /**
  * Main method. Called when application starts.
  * @brief main

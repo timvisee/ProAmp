@@ -3,6 +3,8 @@
 
 #include <QtCore>
 
+namespace Util {
+namespace Profiler {
 class Profiler {
 private:
     QTime t;
@@ -49,5 +51,7 @@ public:
      */
     QString getTimeProper();
 };
+}
+}
 
 #endif // PROFILER_H

@@ -4,6 +4,7 @@
 #include <QVector>
 #include "musicplayer.h"
 
+namespace Player {
 class MusicPlayerManager {
 private:
     QVector<MusicPlayer*> players;
@@ -54,5 +55,6 @@ public:
      */
     bool unmanageIndex(int i);
 };
+}
 
 #endif // MUSICPLAYERMANAGER_H

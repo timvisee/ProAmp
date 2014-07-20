@@ -1,5 +1,7 @@
 #include "volumecontroller.h"
 
+using namespace Player::Volume;
+
 /**
  * Constructor
  * @brief VolumeController::VolumeController

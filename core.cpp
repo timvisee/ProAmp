@@ -5,6 +5,10 @@
 #include "profiler.h"
 #include "musicplayer.h"
 
+using Player::MusicPlayer;
+using Util::Log::Logger;
+using Util::Profiler::Profiler;
+
 /**
  * Constructor
  * @brief Core::Core

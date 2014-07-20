@@ -1,5 +1,7 @@
 #include "profiler.h"
 
+using namespace Util::Profiler;
+
 QTime t;
 
 /**
@@ -7,7 +9,7 @@ QTime t;
  * @brief Profiler::Profiler
  * @param start True to start the timer on construction, false otherwise
  */
-Profiler::Profiler(bool start) {
+Util::Profiler::Profiler::Profiler(bool start) {
     // Check whether we should start the timer
     if(start)
         this->start();

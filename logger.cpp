@@ -1,5 +1,7 @@
 #include "logger.h"
 
+using namespace Util::Log;
+
 // Define variables
 /** Defines whether the logger is initialized or not */
 bool Logger::_init = false;
