@@ -7,7 +7,7 @@
 
 /**
  * Constructor
- * @brief Core
+ * @brief Core::Core
  */
 Core::Core() { }
 
@@ -27,6 +27,7 @@ bool Core::init() {
     // Music player testing
     MusicPlayer& mp = this->getMusicPlayerManager().create();
     mp.setSourceFile("C:\\test.mp3");
+    mp.getVolumeController().setVolume(100);
     mp.play();
 
     // TODO: Core initialization code here...
@@ -35,6 +36,7 @@ bool Core::init() {
     Logger::debug(ProAmp::APP_NAME + " Core initialized successfully, took " + p.getTimeProper() + "!");
     return true;
 }
+
 /**
  * Get the music player manager instance
  * @brief Core::getMusicPlayerManager

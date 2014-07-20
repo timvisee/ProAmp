@@ -4,9 +4,15 @@
 #include <QtMultimedia>
 #include <QtMultimedia/QMediaPlayer>
 
+#include "volumecontroller.h"
+
 class MusicPlayer {
 private:
     QMediaPlayer p;
+    VolumeController vc;
+
+private slots:
+    void update();
 
 public:
     /**
@@ -39,6 +45,8 @@ public:
      * @brief stop
      */
     void stop();
+
+    VolumeController getVolumeController();
 };
 
 #endif // MUSICPLAYER_H

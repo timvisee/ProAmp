@@ -4,7 +4,10 @@
  * Constructor
  * @brief MusicPlayer::MusicPlayer
  */
-MusicPlayer::MusicPlayer() { }
+MusicPlayer::MusicPlayer() {
+    // Construct the volume controller
+    this->vc = VolumeController(&p);
+}
 
 /**
  * Play the current music source
@@ -38,4 +41,8 @@ void MusicPlayer::pause() {
  */
 void MusicPlayer::stop() {
     this->p.stop();
+}
+
+VolumeController MusicPlayer::getVolumeController() {
+    return this->vc;
 }
