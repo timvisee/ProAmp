@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 #include "proamp.h"
 #include "ui_mainwindow.h"
-
 #include "aboutdialog.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {

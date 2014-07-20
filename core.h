@@ -1,11 +1,12 @@
 #ifndef CORE_H
 #define CORE_H
 
-#include "musicplayer.h"
+#include <QVector>
+#include "musicplayermanager.h"
 
 class Core {
 private:
-    MusicPlayer player;
+    MusicPlayerManager pm;
 
 public:
     /**
@@ -20,6 +21,13 @@ public:
      * @return True if succeed, false otherwise
      */
     bool init();
+
+    /**
+     * Get the music player manager instance
+     * @brief getMusicPlayerManager
+     * @return Music player manager instance
+     */
+    MusicPlayerManager getMusicPlayerManager();
 };
 
 #endif // CORE_H

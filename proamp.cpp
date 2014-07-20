@@ -32,8 +32,7 @@ int main(int argc, char *argv[]) {
     c.init();
 
     // Starting application, show a status message and start a profiler
-    Logger::info(ProAmp::APP_NAME + " started successfully, took " + p.getTimeProper() + "!");
-    Logger::info("Cave Johnson here!");
+    Logger::info(ProAmp::APP_NAME + " started successfully, took " + p.getTimeProper() + "! Cave Johnson here!");
 
     // Show the main window
     MainWindow w;
@@ -42,14 +41,12 @@ int main(int argc, char *argv[]) {
     return a.exec();
 }
 
-
-
 /** Application name */
 const QString ProAmp::APP_NAME = "ProAmp";
 /** Application version code */
 const int ProAmp::APP_VERSION_CODE = 1;
 /** Application version name */
-const QString ProAmp::APP_VERSION_NAME = "0.1 Alpha";
+const QString ProAmp::APP_VERSION_NAME = "0.1 Pre Alpha";
 
 /**
  * Constructor

@@ -19,7 +19,8 @@ SOURCES += proamp.cpp\
     logger.cpp \
     profiler.cpp \
     aboutdialog.cpp \
-    musicplayer.cpp
+    musicplayer.cpp \
+    musicplayermanager.cpp
 
 HEADERS  += proamp.h \
     mainwindow.h \
@@ -27,7 +28,8 @@ HEADERS  += proamp.h \
     logger.h \
     profiler.h \
     aboutdialog.h \
-    musicplayer.h
+    musicplayer.h \
+    musicplayermanager.h
 
 FORMS    += mainwindow.ui \
     aboutdialog.ui

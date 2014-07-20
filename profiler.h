@@ -1,5 +1,6 @@
 #ifndef PROFILER_H
 #define PROFILER_H
+
 #include <QtCore>
 
 class Profiler {

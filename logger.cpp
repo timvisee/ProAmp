@@ -47,6 +47,7 @@ bool Logger::isInit() {
  */
 void Logger::log(QString msg) {
     // TODO: Remove the automatically added quotes on strings using qDebug()
+    // TODO: Use cout << ""?
     qDebug() << msg;
 }
 
