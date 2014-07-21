@@ -30,7 +30,7 @@ bool Core::init() {
 
     // Music player testing
     MusicPlayer& mp = this->getMusicPlayerManager().create();
-    mp.setSourceFile("C:\\test.mp3");
+    mp.setSourceFile("C:/test.mp3");
     mp.getVolumeController().setVolume(100);
     mp.play();
 
