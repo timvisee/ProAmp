@@ -1,13 +1,15 @@
 #ifndef PROFILER_H
 #define PROFILER_H
 
-#include <QtCore>
+#include "clock.h"
+
+using Util::Time::Clock;
 
 namespace Util {
 namespace Profiler {
 class Profiler {
 private:
-    QTime t;
+    Clock clock;
 
 public:
     /**

@@ -2,8 +2,6 @@
 
 using namespace Util::Profiler;
 
-QTime t;
-
 /**
  * Constructor
  * @brief Profiler::Profiler
@@ -20,7 +18,7 @@ Util::Profiler::Profiler::Profiler(bool start) {
  * @brief Profiler::start
  */
 void Profiler::start() {
-    this->t.start();
+    this->clock.start();
 }
 
 /**
@@ -28,7 +26,7 @@ void Profiler::start() {
  * @brief restart
  */
 void Profiler::restart() {
-    this->t.restart();
+    this->clock.restart();
 }
 
 /**
@@ -37,7 +35,7 @@ void Profiler::restart() {
  * @return Profiler time in milliseconds
  */
 int Profiler::getTime() {
-    return this->t.elapsed();
+    return this->clock.getTime();
 }
 
 /**
