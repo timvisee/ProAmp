@@ -7,6 +7,10 @@ using namespace Util::Time;
  * @brief Clock::Clock
  */
 Clock::Clock() {
+    // Reset the elapsed time and offset
+    this->elapsed = 0;
+    this->offset = 0;
+
     // Reset the clock
     this->reset();
 }
