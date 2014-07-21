@@ -1,11 +1,14 @@
-#ifndef STOPWATCH_H
-#define STOPWATCH_H
+#ifndef CLOCK_H
+#define CLOCK_H
 
+#include <QObject>
 #include <QTime>
 
 namespace Util {
 namespace Time {
-class Clock {
+class Clock : public QObject {
+    Q_OBJECT
+
 private:
     /** Timer */
     QTime timer;
@@ -115,8 +118,15 @@ public:
      * @param offset Clock offset in milliseconds.
      */
     void setOffset(int offset);
+
+signals:
+    /**
+     * Triggered when the clock is reset
+     * @brief onReset
+     */
+    void onReset();
 };
 }
 }
 
-#endif // STOPWATCH_H
+#endif // CLOCK_H

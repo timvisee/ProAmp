@@ -23,7 +23,8 @@ SOURCES += proamp.cpp\
     musicplayermanager.cpp \
     volumecontroller.cpp \
     volumetransition.cpp \
-    clock.cpp
+    clock.cpp \
+    stopwatch.cpp
 
 HEADERS  += proamp.h \
     mainwindow.h \
@@ -35,7 +36,8 @@ HEADERS  += proamp.h \
     musicplayermanager.h \
     volumecontroller.h \
     volumetransition.h \
-    clock.h
+    clock.h \
+    stopwatch.h
 
 FORMS    += mainwindow.ui \
     aboutdialog.ui
