@@ -4,9 +4,9 @@
 #include "proamp.h"
 #include "logger.h"
 #include "profiler.h"
-#include "musicplayer.h"
+#include "musicplayerengine.h"
 
-using Player::MusicPlayer;
+using Player::Engine::MusicPlayerEngine;
 using Util::Log::Logger;
 using Util::Profiler::Profiler;
 
@@ -30,7 +30,7 @@ bool Core::init() {
     Profiler p(true);
 
     // Music player testing
-    MusicPlayer& mp = this->getMusicPlayerManager().create();
+    MusicPlayerEngine& mp = this->getMusicPlayerManager().create();
     mp.setSourceFile("C:/test.mp3");
     mp.getVolumeController().setVolume(100);
     mp.play();
@@ -53,6 +53,6 @@ bool Core::init() {
  * @brief Core::getMusicPlayerManager
  * @return Music player manager instance
  */
-MusicPlayerManager Core::getMusicPlayerManager() {
+MusicPlayerEngineManager Core::getMusicPlayerManager() {
     return this->pm;
 }

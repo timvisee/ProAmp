@@ -3,13 +3,13 @@
 
 #include <QVector>
 #include <QSystemTrayIcon>
-#include "musicplayermanager.h"
+#include "musicplayerenginemanager.h"
 
-using Player::MusicPlayerManager;
+using Player::Engine::MusicPlayerEngineManager;
 
 class Core {
 private:
-    MusicPlayerManager pm;
+    MusicPlayerEngineManager pm;
     QSystemTrayIcon trayIcon;
 
 public:
@@ -31,7 +31,7 @@ public:
      * @brief getMusicPlayerManager
      * @return Music player manager instance
      */
-    MusicPlayerManager getMusicPlayerManager();
+    MusicPlayerEngineManager getMusicPlayerManager();
 };
 
 #endif // CORE_H

@@ -1,21 +1,21 @@
-#include "musicplayermanager.h"
+#include "musicplayerenginemanager.h"
 
-using namespace Player;
+using namespace Player::Engine;
 
 /**
  * Constructor
  * @brief MusicPlayerManager::MusicPlayerManager
  */
-MusicPlayerManager::MusicPlayerManager() { }
+MusicPlayerEngineManager::MusicPlayerEngineManager() { }
 
 /**
  * Create and manage a new music player instance.
  * @brief MusicPlayerManager::create
  * @return Music player instance that was created.
  */
-MusicPlayer& MusicPlayerManager::create() {
+MusicPlayerEngine& MusicPlayerEngineManager::create() {
     // Create and return a new music player instance
-    this->players.append(new MusicPlayer());
+    this->players.append(new MusicPlayerEngine());
     return *this->players.last();
 }
 
@@ -25,7 +25,7 @@ MusicPlayer& MusicPlayerManager::create() {
  * @param p Music player instance to manage.
  * @return True if succeed, false if failed because the player was being managed already.
  */
-bool MusicPlayerManager::manage(MusicPlayer *const &p) {
+bool MusicPlayerEngineManager::manage(MusicPlayerEngine *const &p) {
     // Make sure this music player instance isn't managed already
     if(this->players.contains(p))
         return false;
@@ -41,7 +41,7 @@ bool MusicPlayerManager::manage(MusicPlayer *const &p) {
  * @param p The music player instance to check for.
  * @return True if the music player instance is being managed, false if not.
  */
-bool MusicPlayerManager::isManaged(MusicPlayer *const &p) {
+bool MusicPlayerEngineManager::isManaged(MusicPlayerEngine *const &p) {
     return this->players.contains(p);
 }
 
@@ -51,7 +51,7 @@ bool MusicPlayerManager::isManaged(MusicPlayer *const &p) {
  * @param p Music player instance to stop managing. False will be returned if the music player instance isn´t being managed.
  * @return True if succeed, false if failed.
  */
-bool MusicPlayerManager::unmanage(MusicPlayer *const &p) {
+bool MusicPlayerEngineManager::unmanage(MusicPlayerEngine *const &p) {
     // Get the index of the instance to remove
     int i = this->players.indexOf(p);
 
@@ -70,7 +70,7 @@ bool MusicPlayerManager::unmanage(MusicPlayer *const &p) {
  * @param i Index of the music player to remove. If the index is out of bound false will be returned.
  * @return True if succeed, false if failed.
  */
-bool MusicPlayerManager::unmanageIndex(int i) {
+bool MusicPlayerEngineManager::unmanageIndex(int i) {
     // Make sure the index is in bound
     if(i < 0 || i >= this->players.size())
         return false;

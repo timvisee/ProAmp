@@ -19,12 +19,12 @@ SOURCES += proamp.cpp\
     logger.cpp \
     profiler.cpp \
     aboutdialog.cpp \
-    musicplayer.cpp \
-    musicplayermanager.cpp \
     volumecontroller.cpp \
     volumetransition.cpp \
     clock.cpp \
-    stopwatch.cpp
+    stopwatch.cpp \
+    musicplayerengine.cpp \
+    musicplayerenginemanager.cpp
 
 HEADERS  += proamp.h \
     mainwindow.h \
@@ -32,12 +32,12 @@ HEADERS  += proamp.h \
     logger.h \
     profiler.h \
     aboutdialog.h \
-    musicplayer.h \
-    musicplayermanager.h \
     volumecontroller.h \
     volumetransition.h \
     clock.h \
-    stopwatch.h
+    stopwatch.h \
+    musicplayerengine.h \
+    musicplayerenginemanager.h
 
 FORMS    += mainwindow.ui \
     aboutdialog.ui

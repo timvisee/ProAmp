@@ -1,5 +1,5 @@
-#ifndef MUSICPLAYER_H
-#define MUSICPLAYER_H
+#ifndef MUSICPLAYERENGINE_H
+#define MUSICPLAYERENGINE_H
 
 #include <QtMultimedia>
 #include <QtMultimedia/QMediaPlayer>
@@ -8,7 +8,8 @@
 using Player::Volume::VolumeController;
 
 namespace Player {
-class MusicPlayer {
+namespace Engine {
+class MusicPlayerEngine {
 private:
     QMediaPlayer p;
     VolumeController vc;
@@ -21,7 +22,7 @@ public:
      * Constructor
      * @brief MusicPlayer::MusicPlayer
      */
-    MusicPlayer();
+    MusicPlayerEngine();
 
     /**
      * Play the current music source
@@ -48,8 +49,14 @@ public:
      */
     void stop();
 
+    /**
+     * Get the volume controller instance
+     * @brief getVolumeController
+     * @return Volume controller instance
+     */
     VolumeController getVolumeController();
 };
 }
+}
 
-#endif // MUSICPLAYER_H
+#endif // MUSICPLAYERENGINE_H
