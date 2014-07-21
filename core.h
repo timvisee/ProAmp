@@ -2,6 +2,7 @@
 #define CORE_H
 
 #include <QVector>
+#include <QSystemTrayIcon>
 #include "musicplayermanager.h"
 
 using Player::MusicPlayerManager;
@@ -9,6 +10,7 @@ using Player::MusicPlayerManager;
 class Core {
 private:
     MusicPlayerManager pm;
+    QSystemTrayIcon trayIcon;
 
 public:
     /**

@@ -1,5 +1,6 @@
 #include "core.h"
 #include <QtCore>
+#include <QIcon>
 #include "proamp.h"
 #include "logger.h"
 #include "profiler.h"
@@ -33,6 +34,12 @@ bool Core::init() {
     mp.setSourceFile("C:/test.mp3");
     mp.getVolumeController().setVolume(100);
     mp.play();
+
+    // Set up the system tray icon
+    // TODO: Set tray icon
+    this->trayIcon.setIcon(QIcon(":/logo.png"));
+    this->trayIcon.setToolTip(ProAmp::APP_NAME);
+    this->trayIcon.setVisible(true);
 
     // TODO: Core initialization code here...
 
