@@ -14,7 +14,9 @@ using Util::Profiler::Profiler;
  * Constructor
  * @brief Core::Core
  */
-Core::Core() { }
+Core::Core() {
+    //Core::instance = this;
+}
 
 /**
  * Initialize the core
@@ -32,12 +34,12 @@ bool Core::init() {
     // Music player testing
     MusicPlayerEngine& mp = this->getMusicPlayerManager().create();
     mp.setSourceFile("C:/test.mp3");
-    mp.getVolumeController().setVolume(100);
+    mp.getVolumeController().setVolume(50);
     mp.play();
 
     // Set up the system tray icon
     // TODO: Set tray icon
-    this->trayIcon.setIcon(QIcon(":/logo.png"));
+    this->trayIcon.setIcon(QIcon(ProAmp::APP_SYSTEMTRAY_ICON));
     this->trayIcon.setToolTip(ProAmp::APP_NAME);
     this->trayIcon.setVisible(true);
 

@@ -22,6 +22,8 @@ bool MainWindow::init() {
     // Set the title of the file menu
     this->ui->menuFile->setTitle(ProAmp::APP_NAME);
 
+    this->setStyleSheet("background-color: #303030; color: #A8A8A8;");
+
     // Everything seems to be fine, return true
     return true;
 }

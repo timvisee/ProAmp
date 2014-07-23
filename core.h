@@ -13,6 +13,8 @@ private:
     QSystemTrayIcon trayIcon;
 
 public:
+    static Core *instance;
+
     /**
      * Constructor
      * @brief Core

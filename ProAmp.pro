@@ -24,7 +24,8 @@ SOURCES += proamp.cpp\
     clock.cpp \
     stopwatch.cpp \
     musicplayerengine.cpp \
-    musicplayerenginemanager.cpp
+    musicplayerenginemanager.cpp \
+    musicplayer.cpp
 
 HEADERS  += proamp.h \
     mainwindow.h \
@@ -37,7 +38,11 @@ HEADERS  += proamp.h \
     clock.h \
     stopwatch.h \
     musicplayerengine.h \
-    musicplayerenginemanager.h
+    musicplayerenginemanager.h \
+    musicplayer.h
 
 FORMS    += mainwindow.ui \
     aboutdialog.ui
+
+RESOURCES += \
+    res.qrc
